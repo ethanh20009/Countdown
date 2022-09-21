@@ -155,7 +155,8 @@ public class UserPanel extends JPanel {
                     a = b;
                     b = temp;
                 }
-                if (a%b == 0){
+                
+                if (b != 0 && a%b == 0 ){
                     step = "Divide " + String.valueOf(a) + " by " + String.valueOf(b);
                     newValue = a/b;
                     preparedList = new ArrayList<>(ammended);
